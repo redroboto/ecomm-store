@@ -1,7 +1,38 @@
-export default function Home() {
+import { Button } from "@/components/ui/button";
+import { stripe } from "@/lib/stripe";
+import Image from "next/image";
+import Link from "next/link";
+
+export default async function Home() {
+  const products = await stripe.products.list({
+    expand: ["data.default_price"],
+    active: true,
+    limit: 5,
+  });
+
   return (
     <div>
-      This is the home page.
+      <section className="bg-battleship-gray-100 rounded">
+        <div className="mx-auto flex items-center justify-evenly">
+          <div className="flex flex-col space-y-2">
+            <h1 className="text-3xl font-bold">Welcome to My E-Commerce Store!</h1>
+            <p>Check out our selection of products.</p>
+            <Button asChild variant="default" className="rounded-full w-1/2">
+              <Link href="/products">View All Products</Link>
+            </Button>
+          </div>
+          <Image src={products.data[0].images[0]}
+                width={500} 
+                height={500} 
+                alt="Product Image"
+                className="overflow-hidden rounded" 
+          />
+        </div>
+        
+      </section>
+      <section>
+        Carousel goes here.
+      </section>
     </div>
   );
 }
