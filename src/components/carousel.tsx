@@ -2,7 +2,7 @@
 
 import Stripe from "stripe";
 import Image from "next/image";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { useEffect, useState } from "react";
 
 interface Props {
