@@ -40,6 +40,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-battleship-gray-100: oklch(0.62 0.0132 183.84);
+  --color-taupe-100: oklch(0.36 0.0337 71.86);
 }
 
 :root {

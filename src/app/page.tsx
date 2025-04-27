@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { stripe } from "@/lib/stripe";
+import Carousel from "@/components/carousel";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +13,7 @@ export default async function Home() {
 
   return (
     <div>
-      <section className="bg-battleship-gray-100 rounded">
+      <section className="bg-battleship-gray-100 rounded shadow">
         <div className="mx-auto flex items-center justify-evenly">
           <div className="flex flex-col space-y-2">
             <h1 className="text-3xl font-bold">Welcome to My E-Commerce Store!</h1>
@@ -31,7 +32,7 @@ export default async function Home() {
         
       </section>
       <section>
-        Carousel goes here.
+        <Carousel products={products.data}/>
       </section>
     </div>
   );
