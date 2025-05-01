@@ -8,8 +8,8 @@ const ProductsPage = async () => {
       });
 
     return (
-        <div>
-            <h1>All Products</h1>
+        <div className="flex flex-col space-y-5">
+            <h1 className="text-2xl font-bold">All Products</h1>
             <ProductList products={products.data}/>
         </div>
     )

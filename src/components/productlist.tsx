@@ -2,6 +2,7 @@
 import Stripe from "stripe";
 import Product from "./product";
 import { useState } from "react";
+import { Input } from "./ui/input";
 
 interface Props {
     products: Stripe.Product[]
@@ -19,17 +20,17 @@ const ProductList = ({products}: Props) => {
         });
 
     return (
-        <div>
+        <div className="flex flex-col space-y-5">
             <section>
-                <input type="text"
-                       placeholder="search products.."
-                       value={searchTerm}
-                       onChange={(e) => setSearchTerm(e.target.value)} />
+                <Input type="text"
+                       placeholder="Search for products.."
+                       value={searchTerm || ""}
+                       onChange={(e) => setSearchTerm(e.target.value)}/>
             </section>
-            <ul className="grid grid-cols-1">
+            <ul className="grid grid-cols-3 h-auto items-stretch gap-3">
             {filteredProducts && 
             filteredProducts.map( (product,key) => {return (
-            <li  key={key}>
+            <li  key={key} className="">
                 <Product product={product}/>
             </li>
             )})}    

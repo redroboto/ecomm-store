@@ -12,7 +12,7 @@ const Product = ({product}: Props) => {
 
     return (
     <Link href={`/products/${product.id}`}>
-        <Card>
+        <Card className="h-full">
             <div className="h-80 w-full relative">
                 <Image src={product.images[0]}
                         alt="image"
@@ -24,14 +24,16 @@ const Product = ({product}: Props) => {
                     {product.name}
                 </CardTitle>
             </CardHeader>
-            <CardContent className="">
-                <p>
-                    {product.description}
+            <CardContent className="flex flex-col h-1/2 justify-between">
+                <p className="">
+                {product.description}
                 </p>
-                <p>
-                    {price && price.unit_amount && `$ ${(price.unit_amount / 100).toFixed(2)}`}
-                </p>
-                <Button>View Details</Button>
+                <div className="flex flex-col space-y-3">
+                    <p className="font-bold">
+                        {price && price.unit_amount && `$ ${(price.unit_amount / 100).toFixed(2)}`}
+                    </p>
+                    <Button className="w-1/2">View Details</Button>
+                </div>
             </CardContent>
             
         </Card>
