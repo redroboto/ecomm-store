@@ -25,7 +25,7 @@ const ProductDetails = ({product} : Props) => {
     };
 
     return (
-        <div className="grid grid-cols-2 space-x-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-x-2">
             <div className="h-80 w-full relative">
                 <Image src={product.images[0]}
                         alt="image"
