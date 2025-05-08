@@ -27,7 +27,7 @@ const ProductList = ({products}: Props) => {
                        value={searchTerm || ""}
                        onChange={(e) => setSearchTerm(e.target.value)}/>
             </section>
-            <ul className="grid grid-cols-3 h-auto items-stretch gap-3">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-auto items-stretch gap-3">
             {filteredProducts && 
             filteredProducts.map( (product,key) => {return (
             <li  key={key} className="">
