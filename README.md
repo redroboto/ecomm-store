@@ -37,4 +37,4 @@ Visit:
 
 ## Credits/Acknowledgments
 
-Thank you to Pedro Tutorials on YT for the inspiration for this website.
+Thank you to PedroTech on YT for the inspiration for this website.
