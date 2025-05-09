@@ -25,6 +25,9 @@ This is an e-commerce website that I built to practice using the NextJS framewor
 Visit:
 [ecomm-store-one.vercel.app](https://ecomm-store-one.vercel.app/)
 
+*The Stripe account i'm using is on test mode. To test the payment, use one of the [test credit cards from Stripe].
+(https://docs.stripe.com/testing)
+
 ## Or, clone the project so you can tinker with the code!
 
 1. Create your own Stripe test account
