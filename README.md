@@ -2,22 +2,22 @@
 This is a sample e-commerce website that I built to practice using the NextJS framework. Sellers can upload their products on Stripe and start selling online using the platform as the payment channel. Buyers can filter through products and add/deduct from their cart then make a payment once they are ready.
 
 ## Features
--Carousel of products
--Search bar for filtering products
--Add, Deduct, or Clear your Items Cart
--Payment processing (via Stripe)
--Inventory Management (via Stripe)
+- Carousel of products
+- Search bar for filtering products
+- Add, Deduct, or Clear your Items Cart
+- Payment processing (via Stripe)
+- Inventory Management (via Stripe)
 
 ## Tech Stack
--NextJS (v19)
--Typescript
+- NextJS (v19)
+- Typescript
 
 ## Dependencies
--Tailwind CSS (v4)
--ShadCN UI
--Hero Icons
--Zustand
--Stripe
+- Tailwind CSS (v4)
+- ShadCN UI
+- Hero Icons
+- Zustand
+- Stripe
 
 ## See the project for yourself!
 
