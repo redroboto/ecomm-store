@@ -23,7 +23,7 @@ This is an e-commerce website that I built to practice using the NextJS framewor
 ## See the project for yourself!
 
 Visit:
-[ecomm-store-one.vercel.app](ecomm-store-one.vercel.app)
+[ecomm-store-one.vercel.app](https://ecomm-store-one.vercel.app/)
 
 ## Or, clone the project so you can tinker with the code!
 
