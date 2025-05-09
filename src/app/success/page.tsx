@@ -3,9 +3,9 @@
 import { Button } from "@/components/ui/button"
 import { useStore } from "@/store/cart-store"
 import Link from "next/link"
-import { useEffect } from "react"
+import React, { useEffect } from "react"
 
-export const SuccessPage = () => {
+const SuccessPage: React.FC = () => {
     const {clearItems} = useStore();
     useEffect(() => {
         clearItems();
