@@ -14,12 +14,12 @@ const Navbar = () => {
         const handleResize = () => {
             if (window.innerWidth >= 768) {
                 setMobileOpen(false);
-            };
+            }
+        };
 
-            window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize);
 
-            return () => window.removeEventListener("resize", handleResize);
-        }
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     return <nav className="sticky top-0 z-50 bg-white shadow">

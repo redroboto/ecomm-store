@@ -42,7 +42,7 @@ export const useStore = create<CartStore>()(persist(
                 }).filter((item) => item.quantity > 0)
             }
         }),
-        clearItems: () => set((state) => {
+        clearItems: () => set(() => {
             return {items: []}
         }),
     }), { name: "cart"}

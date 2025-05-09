@@ -9,7 +9,7 @@ export const Success = () => {
     const {clearItems} = useStore();
     useEffect(() => {
         clearItems();
-    },[])    
+    },[clearItems])    
     return (
         <div className="container mx-auto text-center space-y-4">
             <h1 className="text-3xl font-bold">Purchase Successful!</h1>
