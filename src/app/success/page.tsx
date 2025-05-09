@@ -5,7 +5,7 @@ import { useStore } from "@/store/cart-store"
 import Link from "next/link"
 import { useEffect } from "react"
 
-export const Success = () => {
+export const SuccessPage = () => {
     const {clearItems} = useStore();
     useEffect(() => {
         clearItems();
@@ -23,4 +23,4 @@ export const Success = () => {
     )
 }
 
-export default Success;
+export default SuccessPage;
