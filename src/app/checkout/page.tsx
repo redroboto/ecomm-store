@@ -46,10 +46,12 @@ const CheckoutPage = () => {
                 <CardFooter className="flex flex-col items-start gap-y-2">
                     <span>Total No. of Items: {totalQuantity}</span>
                     <span>Cart Total: ${totalPrice}</span>
-                    <Button onClick={() => clearItems()}>Clear Cart</Button>
+                    <div className="text-right w-full">
+                        <Button onClick={() => clearItems()}>Clear Cart</Button>
+                    </div>
                 </CardFooter>
             </Card>
-            <form action={checkoutAction} className="max-w-md mx-auto">
+            <form action={checkoutAction} className="max-w-md mx-auto text-center pt-5">
                 <input className="hidden" name="items" value={JSON.stringify(items)} readOnly/>
                 <Button type="submit">Proceed to Payment</Button>
             </form>

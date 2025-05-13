@@ -32,7 +32,7 @@ const ProductDetails = ({product} : Props) => {
                         fill
                         className="object-cover transition-opacity duration-500 ease-in-out" />
             </div>
-            <div className="flex flex-col space-y-2 px-3">
+            <div className="flex flex-col space-y-2 px-3 pt-5 md:pt-0 lg:pt-0">
                 <h1 className="text-3xl font-bold">{product.name}</h1>
                 <p>{product.description}</p>
                 <span className="font-bold">{price && price.unit_amount && `$ ${(price.unit_amount / 100).toFixed(2)}`}</span>
